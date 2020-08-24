@@ -21,6 +21,9 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+.mobile-bg {
+  display: none;
+}
 .header__inner,
 .footer__inner {
   display: flex;
@@ -28,7 +31,6 @@ body {
   height: 105px;
   align-items: center;
 }
-
 .header__text {
   margin-right: auto;
   margin-left: 30px;
@@ -106,6 +108,7 @@ body {
   margin-bottom: 40px;
   font-weight: 600;
   color: #fff;
+  line-height: 60px;
 }
 .top__inner-text {
   margin-bottom: 73px;
@@ -147,11 +150,12 @@ body {
 .top-form input + input {
   margin-left: 30px;
 }
-
+.mobile__link-btn {
+  display: none;
+}
 .top-form input::placeholder {
   color: #c8dcba;
 }
-
 .top-form button {
   position: absolute;
   right: 0;
@@ -225,6 +229,7 @@ body {
   line-height: 50px;
   max-width: 470px;
   margin-bottom: 30px;
+  padding-top: 40px;
 }
 .tabs__content {
   min-width: 500px;
@@ -484,7 +489,8 @@ body {
 .composition__link-btn,
 .reviews__link-popup,
 .build__link,
-.certificate__link {
+.certificate__link,
+.mobile__link-btn {
   padding: 22px 85px 22px 27px;
   outline: none;
   color: #fff;
