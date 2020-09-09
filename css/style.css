@@ -674,6 +674,8 @@ body {
 .composition__item {
   background-color: #f6f9f3;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .composition__item-inner {
   width: 270px;
@@ -683,57 +685,37 @@ body {
   background-size: auto;
   position: relative;
 }
-.composition__row:nth-of-type(1)
-  .composition__item:nth-of-type(1)
-  .composition__item-inner {
+.composition__item:nth-of-type(1) {
   background-image: url(../images/comp-1.png);
 }
-.composition__row:nth-of-type(1)
-  .composition__item:nth-of-type(2)
-  .composition__item-inner {
+.composition__item:nth-of-type(2) {
   background-image: url(../images/comp-2.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(1)
-  .composition__item-inner {
+.composition__item:nth-of-type(4) {
   background-image: url(../images/comp-3.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(2)
-  .composition__item-inner {
+.composition__item:nth-of-type(5) {
   background-image: url(../images/comp-4.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(3)
-  .composition__item-inner {
+.composition__item:nth-of-type(6) {
   background-image: url(../images/comp-5.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(4)
-  .composition__item-inner {
+.composition__item:nth-of-type(7) {
   background-image: url(../images/comp-6.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(5)
-  .composition__item-inner {
+.composition__item:nth-of-type(8) {
   background-image: url(../images/comp-7.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(6)
-  .composition__item-inner {
+.composition__item:nth-of-type(9) {
   background-image: url(../images/comp-8.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(7)
-  .composition__item-inner {
+.composition__item:nth-of-type(10) {
   background-image: url(../images/comp-9.png);
 }
-.composition__row:nth-of-type(2)
-  .composition__item:nth-of-type(8)
-  .composition__item-inner {
+.composition__item:nth-of-type(11) {
   background-image: url(../images/comp-10.png);
 }
-.composition__row:nth-of-type(3) .composition__item-inner {
+.composition__item:nth-of-type(13) {
   background-image: url(../images/comp-11.png);
 }
 .composition__item-num,
@@ -795,9 +777,9 @@ body {
 .composition__item-inner:hover .composition__item-effect {
   opacity: 1;
 }
-.composition__row {
+.composition__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .composition__box {
@@ -1080,6 +1062,11 @@ body {
 }
 .certificate__link::after {
   top: 27px;
+}
+.footer__links {
+  width: 55%;
+  justify-content: space-between;
+  display: flex;
 }
 .footer__link {
   text-decoration: underline;
